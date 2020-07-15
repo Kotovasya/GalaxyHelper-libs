@@ -1,11 +1,11 @@
 local scirpt_version = 1.0
 
 local Lib = {}
-function Lib:new(version, path, link)
+function Lib:new(version, path, url)
 	local public = {}
 		public.version = version
 		public.path = path
-		public.link = link
+		public.url = url
 
 	setmetatable(public, self)
 	self.__index = self

@@ -1,25 +1,25 @@
 local version = 1.0
 
-local Point = 'lib.Galaxy Entities.Point'
+local Point = require 'lib.Galaxy Entities.Point'
 
 local Gangzone = { version = version }
 function Gangzone:new(id, point1, point2, dwColor, altColor)
 	local public = {}
-		public.ID = id
-		public.Point1 = point1
-		public.Point2 = point2
-		public.DwColor = dwColor
-		public.AltColor = altColor
+		public.id = id
+		public.point1 = point1
+		public.point2 = point2
+		public.dwColor = dwColor
+		public.altColor = altColor
 
-		public.Pickup = nil
-		public.PickupText = ""
+		public.pickup = nil
+		public.pickupText = ""
 
-	function public:GetAll2dPoints()
-		return point1, Point:new(point1.X, point2.Y, point1.Z), point2, Point:new(point2.X, point1.Y, point1.Z)
+	function public:getAll2dPoints()
+		return self.point1, Point:new(self.point1.x, self.point2.y, self.point1.z), self.point2, Point:new(self.point2.x, self.point1.y, self.point1.z)
 	end
 	
-	function public:GetAll3dPoints()
-		return point1, Point:new(point1.X, point2.Y, point1.Z), Point:new(point2.X, point2.Y, point1.Z), Point:new(point2.X, point1.Y, point1.Z), Point:new(point1.X, point1.Y, point2.Z), Point:new(Point1.X, point2.Y, point2.Z), point2, Point:new(point2.X, point1.Y, point2.Z)
+	function public:getAll3dPoints()
+		return self.point1, Point:new(self.point1.x, self.point2.y, self.point1.z), Point:new(self.point2.x, self.point2.y, self.point1.z), Point:new(self.point2.x, self.point1.y, self.point1.z), Point:new(self.point1.x, self.point1.y, self.point2.z), Point:new(self.point1.x, self.point2.y, self.point2.z), self.point2, Point:new(self.point2.x, self.point1.y, self.point2.z)
 	end
 
 	setmetatable(public, self)

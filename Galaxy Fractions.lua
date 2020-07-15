@@ -3,16 +3,16 @@ local version = 1.0
 local Member = 'lib.Galaxy Entities.Fraction Member'
 
 local Fraction = {}
-function Fraction:new(HEXcolor, commandColor, gangzoneColor, name, skins, ranks)
+function Fraction:new(hexColor, commandColor, gangzoneColor, name, skins, ranks)
 	local public = {}
-		public.HEXcolor = HEXcolor 								-- 0xAAAAAA example
-		public.CommandColor = commandColor						-- /cvet 85 example
-		public.GangzoneColor = gangzoneColor				
-		public.Name = name
-		public.Skins = skins									-- Fraction skin table
-		public.Ranks = ranks									-- Fraction ranks
+		public.hexColor = hexColor 								-- 0xAAAAAA example
+		public.commandColor = commandColor						-- /cvet 85 example
+		public.gangzoneColor = gangzoneColor				
+		public.name = name
+		public.skins = skins									-- Fraction skin table
+		public.ranks = ranks									-- Fraction ranks
 		
-		public.Members = {}										-- Fraction members table
+		public.members = {}										-- Fraction members table
 		
 	setmetatable(public, self)
 	self.__index = self;

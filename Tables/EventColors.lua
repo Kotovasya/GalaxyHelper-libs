@@ -1,6 +1,6 @@
 local version = 1.0
 
-local EventColors = {
+local eventColors = {
 	[1433108731] = "La Cosa Nostra",
 	[1435370502] = "Yakuza",
 	[1432778633] = "Русская Мафия",
@@ -16,6 +16,6 @@ local EventColors = {
 } -- цвета переведены в положительные (по модулю)
 
 local versionMetatable = { __index = { version = version } }
-setmetatable(EventColors, versionMetatable)
+setmetatable(eventColors, versionMetatable)
 
-return EventColors
+return eventColors

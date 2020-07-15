@@ -1,6 +1,6 @@
 local version = 1.0
 
-local GangzoneColors = {
+local gangzoneColors = {
 	[2861858565] = "La Cosa Nostra",
 	[2859596794] = "Yakuza",
 	[2862188663] = "Русская Мафия",
@@ -16,6 +16,6 @@ local GangzoneColors = {
 }
 
 local versionMetatable = { __index = { version = version } }
-setmetatable(GangzoneColors, versionMetatable)
+setmetatable(gangzoneColors, versionMetatable)
 
-return GangzoneColors
+return gangzoneColors

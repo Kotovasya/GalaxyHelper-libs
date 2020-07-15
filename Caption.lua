@@ -4,9 +4,9 @@ local Caption = { version = version }
 
 function Caption:new(id, gangzone)
 	local public = {}
-		public.ID = id
-		public.Gangzone = gangzone
-		public.Rollback = 0
+		public.id = id
+		public.gangzone = gangzone
+		public.rollback = 0
 
 	setmetatable(public, self)
 	self.__index = self;
