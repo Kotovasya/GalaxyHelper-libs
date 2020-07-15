@@ -13,7 +13,7 @@ function Lib:new(version, path, url)
 end
 
 local Libs = {
-	StandartFractionNames = Lib:new(1.1, 'lib.Galaxy Entities.Tables.StandartFractionNames', "https://raw.githubusercontent.com/Kotovasya/GalaxyHelper-libs/master/Tables/StandartFractionNames.lua"),
+	StandartFractionNames = Lib:new(1.0, 'lib.Galaxy Entities.Tables.StandartFractionNames', "https://raw.githubusercontent.com/Kotovasya/GalaxyHelper-libs/master/Tables/StandartFractionNames.lua"),
 	StandartCaptionNames =  Lib:new(1.0, 'lib.Galaxy Entities.Tables.StandartCaptionNames', "https://raw.githubusercontent.com/Kotovasya/GalaxyHelper-libs/master/Tables/StandartCaptionNames.lua"),
 	RenderAlignments = Lib:new(1.0, 'lib.Galaxy Entities.Tables.RenderAlignments', "https://raw.githubusercontent.com/Kotovasya/GalaxyHelper-libs/master/Tables/RenderAlignments.lua"),
 	GangzoneColors = Lib:new(1.0, 'lib.Galaxy Entities.Tables.GangzoneColors', "https://raw.githubusercontent.com/Kotovasya/GalaxyHelper-libs/master/Tables/GangzoneColors.lua"),
